@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+   width: 100%;
+   height: 100vh;
+   padding: 50px 20px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 40px;
+  
+}
+
+.sidecontent, .maincontent{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidecontent{
+    flex-basis: 250px;
+}
+.maincontent{
+    flex-basis: calc(100% - 290px);
+}
+
+@media (max-width: 800px){
+   
+    .sidecontent, .maincontent{
+        flex-basis: 100%;
+    }
+} 
